@@ -251,6 +251,8 @@ curl -X POST -F "file=@data/almond/Ak/test.jpg" http://localhost:8000/predict
 ## Результаты
 
 **Тестовая выборка (234 изображения), финальная модель ResNet18 + Focal Loss:**
+<img width="1477" height="516" alt="image" src="https://github.com/user-attachments/assets/0dba3610-84cf-4ba2-8418-fcd890423499" />
+<img width="1488" height="505" alt="image" src="https://github.com/user-attachments/assets/9c9ec381-47b1-43cf-8b95-b55b4a04c627" />
 
 ```
 Test Accuracy: 93.59%
