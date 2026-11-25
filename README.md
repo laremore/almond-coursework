@@ -228,11 +228,6 @@ curl -X POST -F "file=@data/almond/Ak/test.jpg" http://localhost:8000/predict
 
 Финальная модель: **ResNet18 + Focal Loss**, файл `best_resnet18_focal_almond.pth`.
 
-Идентификатор эксперимента в ClearML: `resnet18_focal_almond`.
-Ссылка на эксперимент: **[ВСТАВЬ ССЫЛКУ]**
-
-(Зайди в ClearML, открой эксперимент `resnet18_focal_almond`, скопируй URL из адресной строки и вставь вместо `[ВСТАВЬ ССЫЛКУ]`.)
-
 ## Трекер экспериментов
 
 Используется облачный **ClearML Hosted Service** (https://app.clear.ml).
