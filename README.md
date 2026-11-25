@@ -231,6 +231,7 @@ curl -X POST -F "file=@data/almond/Ak/test.jpg" http://localhost:8000/predict
 ## Трекер экспериментов
 
 Используется облачный **ClearML Hosted Service** (https://app.clear.ml).
+Ссылка на просмотр экспериментов - https://app.clear.ml/projects/b3836546299d41e2aec51c83a716396e/experiments/24028421da4f4924a89ea133ffec1012/output/execution
 
 Проект: `Almond Classification Coursework`.
 
