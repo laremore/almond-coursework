@@ -1,0 +1,13 @@
+data/
+*.pth
+*.pt
+
+__pychache__/
+*.pyc
+*.pyo
+
+.idea/
+.venv/
+
+.env
+clearml.conf

@@ -1,0 +1,12 @@
+FROM python:3.10-slim
+WORKDIR /app
+
+RUN pip install --no-cache-dir torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu
+COPY service/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY src/ ./src/
+COPY service/main.py .
+COPY best_resnet18_focal_almond.pth .
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

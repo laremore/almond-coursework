@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  train:
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    volumes:
+      - ./data:/app/data
+      - ./:/app
+    environment:
+      - CLEARML_API_ACCESS_KEY=${CLEARML_API_ACCESS_KEY}
+      - CLEARML_API_SECRET_KEY=${CLEARML_API_SECRET_KEY}
+
+
+  service:
+    build:
+      context: .
+      dockerfile: Dockerfile.service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./best_resnet18_focal_almond.pth:/app/best_resnet18_focal_almond.pth
